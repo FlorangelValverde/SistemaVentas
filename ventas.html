@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de ventas</title>
+    <link rel="stylesheet" href="css/ventas.css">
+</head>
+<body>
+    <section id="principal">
+        <section id="buscador">
+            <h4 id="producto">Producto</h4>
+            <input type="search" name="lupa" id="lupa" placeholder="Buscar por código de barra o nombre del poducto">
+        </section>
+            <section id="lista">
+                <table style="border-bottom: 4px  solid rgb(103, 161, 236)">
+                    <tr>
+                        <th scope="col" id="item"><strong>ITEM</strong></th>
+                        <th scope="col" id="cantidad"><strong>CANT.</strong></th>
+                        <th scope="col" id="product"><strong>PRODUCTO</strong></th>
+                        <th scope="col" id="marca"><strong>MARCA</strong></th>
+                        <th scope="col" id="precio"><strong>PRECIO</strong></th>
+                        <th scope="col" id="importe"><strong>IMPORTE</strong></th>
+                    </tr>
+                    <tr>
+                        
+                    </tr>
+                </table>
+                
+            </section>
+                <section id="botones">
+                    <input type="button" value="Guardar Compra" id="guardar">
+                    <input type="button" value="VACIAR CARRITO" id="vaciar">
+                </section>
+                <section id="factura">
+                    <section id="monto">
+                    </section>
+                        <section id="contenido">
+                            <form action="" id="form">
+                                <div class="flexbox-container">
+                                    <div>
+                                        <legend>DOCUMENTO</legend>
+                                    <select name="n" id="documento">
+                                    <option value="0"></option>
+                                    <option value="1">FACTURA</option>
+                                    <option value="2">BOLETA</option>
+                                    </select>
+                                    </div>
+                                    <div>
+                                        <legend>TIPO DE PAGO</legend>
+                                        <select name="n" id="tipo">
+                                            <option value="0"></option>
+                                            <option value="1">AL CONTADO</option>
+                                            <option value="2">POR PARTES</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                    <legend style="margin-left: 30px;">SERIE</legend>
+                                    <input type="number" name="numero" id="serie">
+                                    <legend style="margin-left: 30px;">N° DE VENTA</legend>
+                                    <input type="number" name="numero" id="n_venta">
+                                    <br>
+                                    <legend style="margin-left: 30px;">Fecha de compra</legend>
+                                    <input type="date" name="fecha" id="fecha"><br>
+                                    <legend style="margin-left: 30px;">PROVEEDOR</legend>
+                                    <input type="text" id="proveedor" placeholder="RUC o Razón Social"><br>
+                                    <hr>
+                                    <p id="sub">SUB TOTAL</p>
+                                    <br>
+                                    <p id="igv">I.G.V (18%)</p>
+                                    <br>
+                                    <p id="total">TOTAL</p>
+                                    
+                            </form>
+                        </section>
+                </section>
+    </section>                
+</body>
+</html>
